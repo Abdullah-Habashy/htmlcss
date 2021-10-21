@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* body{
+    color: white;
+} */
+
+nav img{
+
+width: 150px;
+/* height: 5%; */
+border-radius: 100%;
+}
+
+
+nav{
+padding: 2% 6%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+
+}
+.header{
+
+    width: 100%;
+    min-height: 100vh;
+    background-image:
+         linear-gradient(rgba(4,9,30,0.8), rgba(4,9,30,0.8)),
+         url(images/building.PNG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color :white
+}
+
+.nav-links{
+
+    flex: 1 ;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style:  none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li::after{
+    content: "";
+    width:0%;
+    height: 1px;
+    display: block;
+    background: tomato;
+    margin: auto;
+    transition: 0.25s
+}
+.nav-links ul li:hover::after{
+    content: "";
+    width:100%;
+    font-size: 18px;
+    /* height: 1px;
+    display: block;
+    background: tomato;
+    margin: auto; */
+}
+
+
+.nav-links ul li a {
+    text-decoration:  none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.text-box{
+
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+      /* need revision */
+    text-align: center;
+}
+
+.text-box h1{
+
+    font-size: 62px;
+}
+.text-box p{
+
+    font-size: 20px;
+    margin: 10px 0 90px;
+}
+
+.hero-btn{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid tomato;
+    background: tomato;
+    transition: 1s;
+}
+
+
+
+
+/* -------------coarses start--------------- */
+
+.course{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.coarse-p{
+
+font-size: 14px;
+font-weight: 300;
+color: #777;
+line-height: 22px;
+padding: 10px
+}
+
+.coarse-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    
+}
+
+.coarse-col{
+
+    flex-basis: 31%;
+    padding:20px 12px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background: #fff3f3;
+    transition: 0.5s;
+}
+
+.coarse-col:hover{
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* --------site start-------------- */
+
+
+.site{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.site-p{
+
+font-size: 14px;
+font-weight: 300;
+color: #777;
+line-height: 22px;
+padding: 10px
+}
+
+.site-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    
+}
+
+.site-col{
+
+    flex-basis: 31%;
+    padding:20px 12px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    background: #fff3f3;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.site-col:hover{
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.site-img{
+    width:100%;
+/* max-height:100%; */
+}
+
+
+
+/* -----------Testimonials ------------- */
+
+
+
+.testim{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+ h1{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.testim-p{
+
+font-size: 14px;
+font-weight: 300;
+color: #777;
+line-height: 22px;
+padding: 10px
+}
+
+.testim-row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    /* margin-top: 5%; */
+    
+}
+
+.testim-col{
+
+    flex-basis: 70%;
+    padding:20px 12px;
+    /* margin-bottom: 5%; */
+    margin-top: 5%;
+    border-radius: 10px;
+    background: #fff3f3;
+    text-align: left;
+    padding: 25px;
+    cursor: pointer;
+    /* overflow: hidden; */
+    transition: 0.5s;
+    display: flex;
+}
+
+.testim-col:hover{
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testim-col img{
+    height: 60px;
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 100%;
+} 
+
+.testim-col p{
+    padding: 0;
+}
+
+.testim-col h3{
+    margin-top: 25px;
+    text-align: left;
+}
+
